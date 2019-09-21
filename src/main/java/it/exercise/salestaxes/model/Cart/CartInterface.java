@@ -1,4 +1,6 @@
-package it.exercise.salestaxes.model;
+package it.exercise.salestaxes.model.Cart;
+
+import it.exercise.salestaxes.model.Product.ProductInterface;
 
 import java.math.BigDecimal;
 import java.util.List;

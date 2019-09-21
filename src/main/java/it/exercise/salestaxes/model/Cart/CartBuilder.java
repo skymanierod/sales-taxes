@@ -1,4 +1,6 @@
-package it.exercise.salestaxes.model;
+package it.exercise.salestaxes.model.Cart;
+
+import it.exercise.salestaxes.model.Printer.SystemPrinter;
 
 public class CartBuilder {
     private CartInterface cart;

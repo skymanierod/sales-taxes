@@ -1,4 +1,6 @@
-package it.exercise.salestaxes.model;
+package it.exercise.salestaxes.model.Cart;
+
+import it.exercise.salestaxes.model.Product.ProductInterface;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -19,12 +21,6 @@ public class Cart implements CartInterface{
 
     @Override
     public void submitCart() {
-        //submit cart somewhere..
-        /*for (ProductInterface p: products) {
-            System.out.println(getLineItemBillRow(p));
-        }
-        System.out.println(getSalesTaxesBillRow());
-        System.out.println(getTotalPriceBillRow());*/
     }
 
     @Override
@@ -54,19 +50,4 @@ public class Cart implements CartInterface{
         totalSalesTaxes = totalSalesTaxes.add(product.getTax());
     }
 
-    /*private void printLineItem(ProductInterface product){
-        System.out.println(getLineItemBillRow(product));
-    }
-
-    public String getLineItemBillRow(ProductInterface product){
-        return product.getProductName() + " : "+ product.getTotalPrice().setScale(2);
-    }
-
-    public String getTotalPriceBillRow(){
-        return "Total : " + totalPrice.setScale(2);
-    }
-
-    public String getSalesTaxesBillRow(){
-        return "Sales Taxes : " + totalSalesTaxes.setScale(2);
-    }*/
 }

@@ -1,7 +1,7 @@
 package it.exercise.salestaxes.model;
 
 import com.flextrade.jfixture.annotations.Fixture;
-import it.exercise.salestaxes.model.Product;
+import it.exercise.salestaxes.model.Product.Product;
 import org.junit.jupiter.api.BeforeEach;
 
 import java.math.BigDecimal;

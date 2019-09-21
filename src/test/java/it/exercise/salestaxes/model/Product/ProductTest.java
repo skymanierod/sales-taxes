@@ -1,5 +1,7 @@
-package it.exercise.salestaxes.model;
+package it.exercise.salestaxes.model.Product;
 
+import it.exercise.salestaxes.model.BaseTest;
+import it.exercise.salestaxes.model.Product.Product;
 import org.junit.jupiter.api.Assertions;
 
 import java.math.BigDecimal;

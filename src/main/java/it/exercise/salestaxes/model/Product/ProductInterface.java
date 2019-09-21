@@ -1,4 +1,4 @@
-package it.exercise.salestaxes.model;
+package it.exercise.salestaxes.model.Product;
 
 import java.math.BigDecimal;
 

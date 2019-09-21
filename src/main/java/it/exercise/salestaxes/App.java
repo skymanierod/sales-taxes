@@ -2,6 +2,12 @@ package it.exercise.salestaxes;
 
 
 import it.exercise.salestaxes.model.*;
+import it.exercise.salestaxes.model.Cart.Cart;
+import it.exercise.salestaxes.model.Cart.CartBuilder;
+import it.exercise.salestaxes.model.Cart.CartInterface;
+import it.exercise.salestaxes.model.Product.Product;
+import it.exercise.salestaxes.model.Product.ProductBuilder;
+import it.exercise.salestaxes.model.Product.ProductInterface;
 
 import java.util.ArrayList;
 import java.util.List;

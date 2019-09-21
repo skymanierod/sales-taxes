@@ -1,5 +1,7 @@
-package it.exercise.salestaxes.model;
+package it.exercise.salestaxes.model.Tax;
 
+import it.exercise.salestaxes.model.BaseTest;
+import it.exercise.salestaxes.model.Tax.Tax;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
