@@ -8,5 +8,5 @@ public interface ProductInterface {
     BigDecimal getOriginalPrice();
     BigDecimal getTotalPrice();
     BigDecimal getTax();
-
+    int getQuantity();
 }

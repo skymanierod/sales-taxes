@@ -11,6 +11,7 @@ public class ProductInput {
     private final BigDecimal price;
     private final boolean isImported;
     private final ProductType type;
+    private final int quantity;
 
     public enum ProductType{
         STANDARD,

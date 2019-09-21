@@ -20,7 +20,7 @@ public class App
         CartInterface cart = new CartBuilder(new Cart()).withPrinter().build();
         List<ProductInterface> products = new ArrayList<>();
         for (ProductInput p : inputList) {
-            builder = new ProductBuilder(new Product(p.getName(),p.getPrice()));
+            builder = new ProductBuilder(new Product(p.getName(),p.getPrice(),p.getQuantity()));
             if(p.isImported()){
                 builder = builder.withDuty();
             }

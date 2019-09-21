@@ -43,7 +43,7 @@ public class SystemPrinter extends Printer {
     }
 
     public String getLineItemBillRow(ProductInterface product){
-        return product.getProductName() + " : "+ product.getTotalPrice().setScale(2);
+        return product.getQuantity() + " " + product.getProductName() + " : "+ product.getTotalPrice().setScale(2);
     }
 
     public String getTotalPriceBillRow(){

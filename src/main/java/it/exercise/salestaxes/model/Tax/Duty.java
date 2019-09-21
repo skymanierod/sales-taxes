@@ -37,4 +37,9 @@ public class Duty extends Tax {
     private BigDecimal getDuty(){
         return product.getOriginalPrice().divide(BigDecimal.valueOf(20));
     }
+
+    @Override
+    public int getQuantity() {
+        return product.getQuantity();
+    }
 }

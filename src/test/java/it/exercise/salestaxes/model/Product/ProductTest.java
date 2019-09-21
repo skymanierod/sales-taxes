@@ -11,7 +11,7 @@ public class ProductTest extends BaseTest {
 
     @Test
     public void shouldCreateProductWithNameAndPrice(){
-        Product product = new Product(productName,price);
+        Product product = new Product(productName,price,1);
 
         Assertions.assertNotNull(product);
         Assertions.assertEquals(productName, product.getProductName());
@@ -20,7 +20,7 @@ public class ProductTest extends BaseTest {
 
     @Test
     public void shouldCreateProductWithoutTaxesAndWithTotalPriceEqualToOriginalPrices(){
-        Product product = new Product(productName,price);
+        Product product = new Product(productName,price,1);
 
         Assertions.assertEquals(BigDecimal.ZERO, product.getTax());
         Assertions.assertEquals(price, product.getOriginalPrice());
@@ -28,7 +28,7 @@ public class ProductTest extends BaseTest {
 
     @Test
     public void shouldThrowNullPointerExceptionWhenProductNameOrPriceAreNull(){
-        Assertions.assertThrows(NullPointerException.class, () -> new Product(productName,null));
-        Assertions.assertThrows(NullPointerException.class, () -> new Product(null, price));
+        Assertions.assertThrows(NullPointerException.class, () -> new Product(productName,null,1));
+        Assertions.assertThrows(NullPointerException.class, () -> new Product(null, price,1));
     }
 }

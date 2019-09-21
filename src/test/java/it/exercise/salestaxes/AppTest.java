@@ -39,6 +39,6 @@ public class AppTest {
     }
 
     private ProductInput buildInputProduct(String name, BigDecimal price, boolean isImported, ProductInput.ProductType type){
-        return new ProductInput(name, price, isImported, type);
+        return new ProductInput(name, price, isImported, type,1);
     }
 }

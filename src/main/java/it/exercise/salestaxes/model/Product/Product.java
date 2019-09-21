@@ -8,10 +8,17 @@ public class Product implements ProductInterface {
 
     private final String productName;
     protected final BigDecimal price;
+    protected final int quantity;
 
-    public Product(@NonNull String productName, @NonNull BigDecimal price) {
+    public Product(@NonNull String productName, @NonNull BigDecimal price, int quantity) {
         this.productName = productName;
         this.price = price;
+        this.quantity = quantity;
+    }
+
+    @Override
+    public int getQuantity() {
+        return quantity;
     }
 
     @Override

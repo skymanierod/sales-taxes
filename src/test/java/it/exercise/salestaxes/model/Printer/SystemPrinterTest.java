@@ -15,6 +15,6 @@ public class SystemPrinterTest extends BaseTest {
 
         Assertions.assertEquals("Total : "+product.getTotalPrice().setScale(2),systemPrinter.getTotalPriceBillRow());
         Assertions.assertEquals("Sales Taxes : "+product.getTax().setScale(2),systemPrinter.getSalesTaxesBillRow());
-        Assertions.assertEquals(product.getProductName()+" : "+product.getTotalPrice().setScale(2),systemPrinter.getLineItemBillRow(product));
+        Assertions.assertEquals(product.getQuantity() +" "+ product.getProductName()+" : "+product.getTotalPrice().setScale(2),systemPrinter.getLineItemBillRow(product));
     }
 }

@@ -37,4 +37,9 @@ public class Vat extends Tax {
     private BigDecimal getVat(){
         return product.getOriginalPrice().divide(BigDecimal.TEN);
     }
+
+    @Override
+    public int getQuantity() {
+        return product.getQuantity();
+    }
 }

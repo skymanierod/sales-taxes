@@ -15,16 +15,16 @@ public class DutyTest extends BaseTest {
 
     @Test
     public void shouldCalculateDuty(){
-        ProductInterface product = new Duty(new Product(productName, BigDecimal.valueOf(10)));
+        ProductInterface product = new Duty(new Product(productName, BigDecimal.valueOf(10),1));
 
         Assertions.assertEquals(BigDecimal.valueOf(0.5).setScale(2), product.getTax());
 
-        product = new Duty(new Product(productName, BigDecimal.valueOf(10)));
+        product = new Duty(new Product(productName, BigDecimal.valueOf(10),1));
     }
 
     @Test
     public void vatShouldBeEqualToZeroWhenProductHasPriceEqualToZero(){
-        ProductInterface product = new Duty(new Product(productName, BigDecimal.valueOf(0)));
+        ProductInterface product = new Duty(new Product(productName, BigDecimal.valueOf(0),1));
 
         Assertions.assertEquals(BigDecimal.ZERO.setScale(2), product.getTax());
     }
