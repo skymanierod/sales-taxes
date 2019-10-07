@@ -1,8 +1,7 @@
-package it.exercise.salestaxes.model.Printer;
+package it.exercise.salestaxes.model.printer;
 
 import it.exercise.salestaxes.model.BaseTest;
-import it.exercise.salestaxes.model.Cart.Cart;
-import it.exercise.salestaxes.model.Printer.SystemPrinter;
+import it.exercise.salestaxes.model.cart.Cart;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

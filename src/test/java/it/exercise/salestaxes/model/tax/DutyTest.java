@@ -1,15 +1,12 @@
-package it.exercise.salestaxes.model.Tax;
+package it.exercise.salestaxes.model.tax;
 
 import it.exercise.salestaxes.model.BaseTest;
-import it.exercise.salestaxes.model.Product.Product;
-import it.exercise.salestaxes.model.Product.ProductInterface;
-import it.exercise.salestaxes.model.Tax.Duty;
+import it.exercise.salestaxes.model.product.Product;
+import it.exercise.salestaxes.model.product.ProductInterface;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
-
-import static com.flextrade.jfixture.FixtureAnnotations.initFixtures;
 
 public class DutyTest extends BaseTest {
 
@@ -18,8 +15,6 @@ public class DutyTest extends BaseTest {
         ProductInterface product = new Duty(new Product(productName, BigDecimal.valueOf(10),1));
 
         Assertions.assertEquals(BigDecimal.valueOf(0.5).setScale(2), product.getTax());
-
-        product = new Duty(new Product(productName, BigDecimal.valueOf(10),1));
     }
 
     @Test

@@ -1,6 +1,6 @@
-package it.exercise.salestaxes.model.Tax;
+package it.exercise.salestaxes.model.tax;
 
-import it.exercise.salestaxes.model.Product.ProductInterface;
+import it.exercise.salestaxes.model.product.ProductInterface;
 
 import java.math.BigDecimal;
 

@@ -1,16 +1,12 @@
-package it.exercise.salestaxes.model.Tax;
+package it.exercise.salestaxes.model.tax;
 
 import it.exercise.salestaxes.model.BaseTest;
-import it.exercise.salestaxes.model.Product.Product;
-import it.exercise.salestaxes.model.Product.ProductInterface;
-import it.exercise.salestaxes.model.Tax.Vat;
+import it.exercise.salestaxes.model.product.Product;
+import it.exercise.salestaxes.model.product.ProductInterface;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.math.BigDecimal;
-
-import static com.flextrade.jfixture.FixtureAnnotations.initFixtures;
-import static java.util.stream.Collectors.toMap;
 
 public class VatTest extends BaseTest {
 

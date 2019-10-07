@@ -1,7 +1,6 @@
-package it.exercise.salestaxes.model.Product;
+package it.exercise.salestaxes.model.product;
 
 import it.exercise.salestaxes.model.BaseTest;
-import it.exercise.salestaxes.model.Product.Product;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

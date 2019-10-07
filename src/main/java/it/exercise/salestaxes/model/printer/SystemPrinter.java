@@ -1,7 +1,7 @@
-package it.exercise.salestaxes.model.Printer;
+package it.exercise.salestaxes.model.printer;
 
-import it.exercise.salestaxes.model.Cart.CartInterface;
-import it.exercise.salestaxes.model.Product.ProductInterface;
+import it.exercise.salestaxes.model.cart.CartInterface;
+import it.exercise.salestaxes.model.product.ProductInterface;
 
 import java.math.BigDecimal;
 import java.util.List;

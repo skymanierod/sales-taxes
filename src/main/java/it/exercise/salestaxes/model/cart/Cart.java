@@ -1,6 +1,6 @@
-package it.exercise.salestaxes.model.Cart;
+package it.exercise.salestaxes.model.cart;
 
-import it.exercise.salestaxes.model.Product.ProductInterface;
+import it.exercise.salestaxes.model.product.ProductInterface;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -21,6 +21,7 @@ public class Cart implements CartInterface{
 
     @Override
     public void submitCart() {
+        //Do stuff to save cart..
     }
 
     @Override

@@ -1,7 +1,7 @@
-package it.exercise.salestaxes.model.Product;
+package it.exercise.salestaxes.model.product;
 
-import it.exercise.salestaxes.model.Tax.Duty;
-import it.exercise.salestaxes.model.Tax.Vat;
+import it.exercise.salestaxes.model.tax.Duty;
+import it.exercise.salestaxes.model.tax.Vat;
 
 public class ProductBuilder {
     private ProductInterface product;
